@@ -1,25 +1,14 @@
-%% LaTeX-Beamer template for KIT design
-%% by Erik Burger, Christian Hammer
-%% title picture by Klaus Krogmann
-%%
-%% version 2.1
-%%
-%% mostly compatible to KIT corporate design v2.0
-%% http://intranet.kit.edu/gestaltungsrichtlinien.php
-%%
-%% Problems, bugs and comments to
-%% burger@kit.edu
 \documentclass[18pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 %% SLIDE FORMAT
-
 % use 'beamerthemekit' for standard 4:3 ratio
 % for widescreen slides (16:9), use 'beamerthemekitwide'
 
 \usepackage{templates/beamerthemekit}
 % \usepackage{templates/beamerthemekitwide}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -35,34 +24,16 @@
 \beamertemplatenavigationsymbolsempty
 
 
-%\usepackage{templates/beamerthemekit}
-\usepackage{templates/beamerthemekit}
-
-%% TITLE PICTURE
-
-% if a custom picture is to be used on the title page, copy it into the 'logos'
-% directory, in the line below, replace 'mypicture' with the 
-% filename (without extension) and uncomment the following line
-% (picture proportions: 63 : 20 for standard, 169 : 40 for wide
-% *.eps format if you use latex+dvips+ps2pdf, 
-% *.jpg/*.png/*.pdf if you use pdflatex)
-
-\titleimage{Susy} % In logos folder
-
+\titleimage{Susy}
 \titlelogo{kidfriendly} 
-% (*.eps format if you use latex+dvips+ps2pdf,
-% *.jpg/*.png/*.pdf if you use pdflatex)
-
-%% TikZ INTEGRATION
 
 % use these packages for PCM symbols and UML classes
 % \usepackage{templates/tikzkit}
 % \usepackage{templates/tikzuml}
 
-% the presentation starts here
 
 \title[SUSY]{Susanne, Freunde nennen mich Susy}
-\author{Jens Schäfer, Jan v.d.Linden}
+\author{Moritz Bauer, Jens Schäfer, Benedikt Stolz, Jan van der Linden}
 
 \institute{Institut für Experimentelle Teilchenphysik (ETP)}
 
@@ -75,15 +46,12 @@
 
 \begin{document}
 
-% change the following line to "ngerman" for German style date and logos
 \selectlanguage{ngerman}
+
 %title page
 \begin{frame}
 \titlepage
 \end{frame}
-
-
-
 
 
 %table of contents
