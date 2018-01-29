@@ -3,3 +3,32 @@
 %- Wie kommt man an die Gewichte der Events? -> data driven bkg estimation
 
 %- lost lepton  
+
+\begin{frame}
+  \frametitle{Lost-lepton estimation}
+  \begin{itemize}
+    \item Lost leptons are electrons/muons not removed by lepton veto
+    \item Reasons: Lepton not accepted, not well-reconstructed or not isolated
+    \item Different approach is needed here: data-driven background estimation
+  \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	 \includegraphics[width=\textwidth]{figures/lost-lepton.png}
+	%\caption{aus Thesis}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Data-driven background estimation}
+  \begin{itemize}
+    \item Goal: Calculated a lost-lepton probability $\omega(\alpha, \epsilon_{reco}, \epsilon_{iso})$ which can be used to weigh the generated events
+    \begin{itemize}
+      \item $\alpha$: acceptance
+      \item $\epsilon_{reco}$: reconstruction efficiency
+      \item $\epsilon_{iso}$: isolation efficiency
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
