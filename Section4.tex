@@ -7,7 +7,7 @@
 \begin{block}{Muon Acceptance}
 \begin{itemize}
 \item evaluated in $N(\si{jets})$- and $\slashed H_{\si{T}}$-bins
-\item acceptances highly dependant on bin
+\item acceptances highly dependent on bin
 \end{itemize}
 \end{block}
 
@@ -24,7 +24,7 @@
 \begin{itemize}
 \item only events that pass muon acceptance are considered
 \item evaluated in $N(\si{jets})$-, $H_{\si{T}}$- and $\slashed H_{\si{T}}$-bins
-\item efficiencies also highly dependant on bin
+\item efficiencies also highly dependent on bin
 \end{itemize}
 \end{block}
 
@@ -44,7 +44,8 @@
 \item apply self-implemented method to W+jets MC sample\\
 \begin{itemize}
 	\item cut sample to events with one isolated $\mu$ (control sample)
-	\item weight events with probability that $\mu$ is not isolated\\
+	\item weight events with probability that $\mu$ is not isolated 
+	$w = \frac{ 1 - \alpha \cdot \epsilon_{\si{reco}} \cdot \epsilon_{\si{iso}}}{\alpha \cdot \epsilon_{\si{reco}} \cdot \epsilon_{\si{iso}}}$\\
 	$\Rightarrow$ mimic distribution where no isolated $\mu$ found 
 \end{itemize}
 \item compare to sample where falsely no isolated $\mu$ was found
