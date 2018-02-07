@@ -6,11 +6,13 @@
 
 \begin{frame}
   \frametitle{Data-driven background estimation}
+  \begin{block}{Why?}
   \begin{itemize}
     \item Use data instead of MC to get lower uncertainties
     \item Example: Use Z($\mu \mu$) + jets and replace muons with neutrinos
     \item Disadv.: $\mathcal{B}(Z \rightarrow \mu \mu) < \mathcal{B}(Z \rightarrow \nu \nu)$ increases stat. uncertainty 
   \end{itemize}
+  \end{block}
   \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/zmumu}
@@ -21,7 +23,7 @@
   \frametitle{MC-only background estimation}
   \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth,height=0.7\textheight,keepaspectratio]{figures/mc_znunu}
+    \includegraphics[width=0.7\textwidth,height=0.8\textheight,keepaspectratio]{figures/mc_znunu}
   \end{figure}
 \end{frame}
 
@@ -35,22 +37,24 @@
 
 \begin{frame}
   \frametitle{Lost-lepton estimation}
+  \begin{block}{}
   \begin{itemize}
-    \item Lost leptons are electrons/muons not removed by lepton veto
+    \item Lost leptons are electrons/muons in W+jets that are not removed by lepton veto
     \item Reasons: Lepton not accepted, not well-reconstructed or not isolated
     \item Different approach is needed here: data-driven background estimation
   \end{itemize}
+  \end{block}
 
   \begin{figure}[H]
     \centering
      \includegraphics[width=\textwidth]{figures/lost-lepton.png}
     %\caption{aus Thesis}
   \end{figure}
-
 \end{frame}
 
 \begin{frame}
-  \frametitle{Data-driven background estimation}
+  \frametitle{Lost-lepton estimation}
+  \begin{block}{Method:}
   \begin{itemize}
     \item Use lost-lepton probability $\omega(\alpha, \epsilon_{reco}, \epsilon_{iso})$ to get real number of events with leptons 
     \begin{itemize}
@@ -58,8 +62,17 @@
       \item $\epsilon_{reco}$: reconstruction efficiency
       \item $\epsilon_{iso}$: isolation efficiency
     \end{itemize}
-    \item Example: We observe 18 muons and know that 90\% of reconstructed muons are isolated
+    \item Example: We observe 18 muons and know that 90\% of reconstructed muons are isolated ($\epsilon_{iso} = 0.9$)
     \item $\rightarrow$ $N_\mu^{lost} = N_\mu^{iso} \cdot \frac{1 - \epsilon_{iso}}{\epsilon_{iso}} = 18 \cdot \frac{1 - 0.9}{0.9} = 2$
   \end{itemize}
-
+  \end{block}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Lost-lepton estimation}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth,height=0.8\textheight,keepaspectratio]{figures/lost-lepton-flow}
+  \end{figure}
+\end{frame}
+
